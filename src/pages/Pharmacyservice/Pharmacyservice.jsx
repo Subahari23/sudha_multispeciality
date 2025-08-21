@@ -5,7 +5,6 @@ import Link from "next/link";
 import Banner from "@/assets/facilities/pharmacy-banner.webp";
 
 import Sudha1 from "@/assets/pharmacyService/sudha.png";
-import Sudha from "@/assets/pharmacyService/sudha.jpg";
 import Image from "next/image";
 import "./pharmacy.css";
 import Medicine from "@/assets/pharmacyService/Medicine.png";
