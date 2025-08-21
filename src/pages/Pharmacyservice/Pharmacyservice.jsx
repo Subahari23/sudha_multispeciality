@@ -5,11 +5,11 @@ import Link from "next/link";
 import Banner from "@/assets/facilities/pharmacy-banner.webp";
 
 import Sudha1 from "@/assets/pharmacyservice/sudha.png";
-import Sudha from "@/assets/pharmacyservice/Sudha.jpg";
+import Sudha from "@/assets/pharmacyservice/sudha.jpg";
 import Image from "next/image";
-import "../pharmacyservice/pharmacy.css";
-import Medicine from "@/assets/pharmacyservice/medicine.png";
-import Check from "@/assets/insurance/check.svg";
+import "/pharmacy.css";
+import Medicine from "@/assets/pharmacyservice/Medicine.png";
+import Check from "@/assets/Insurance/check.svg";
 import CampusFacilitySlider from "@/components/FacilitySlider/CampusFacilitySlider";
 import Slider1 from "@/assets/pharmacyservice/slider1.png";
 import Slider2 from "@/assets/pharmacyservice/slider2.png";
