@@ -23,10 +23,10 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 
 const breadcrumbItems = [
-    { label: "Home", href: "/" },
-    { label: "About Us", href: "" },
-     { label: "Awards & Honors", href: "/awards-and-honors" },
-  ];
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "" },
+  { label: "Awards & Honors", href: "/awards-and-honors" },
+];
 
 const hospitalscards = [
   {
@@ -74,7 +74,7 @@ const Awards = () => {
     ),
   };
 
-   const containerVariants = {
+  const containerVariants = {
     hidden: {},
     show: {
       transition: {
@@ -92,46 +92,55 @@ const Awards = () => {
   };
   return (
     <div>
-      <section className="relative -mt-20 lg:-mt-[100px]  m-10">
+      <section className="relative -mt-20 sm:-mt-20 md:-mt-24 lg:-mt-24 mx-2 sm:mx-2 md:mx-2 lg:mx-2">
         <div
-          className=" relative top-3 max-w-full  mx-auto px-4 py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover md:bg-contain"
+          className="
+            relative top-3 max-w-full mx-auto px-4 py-36 z-10 text-white
+            bg-center bg-no-repeat bg-cover
+            rounded-t-3xl rounded-b-3xl  
+            sm:rounded-none            
+            md:rounded-3xl          
+            overflow-hidden
+          "
           style={{ backgroundImage: `url(${Banner.src})` }}
         >
-
           <div className="pl-8 md:pl-20">
+            {/* Breadcrumb */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+              className="mb-3 text-white"
+            >
+              <Breadcrumb items={breadcrumbItems} />
+            </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className="mb-3 text-white"
-          >
-             <Breadcrumb items={breadcrumbItems} />
-          </motion.div>
+            {/* Title */}
+            <motion.h1
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-[44px] font-bold mb-4"
+            >
+              Awards & Honors
+            </motion.h1>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-[44px] font-bold mb-4"
-          >
-            Awards & Honors
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-white mb-6"
-          >
-            The Symbol of Sudha Reputation – Our Awards and Honours
-          </motion.p>
+            {/* Subtitle */}
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-white mb-6"
+            >
+              The Symbol of Sudha Reputation – Our Awards and Honours
+            </motion.p>
           </div>
         </div>
       </section>
 
+
       <section>
-        <div className="max-w-7xl mx-auto pt-8 pb-16 h-full">
+        <div className="max-w-7xl mx-auto px-4 pt-14 pb-16 h-full">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -153,16 +162,16 @@ const Awards = () => {
         </div>
       </section>
 
-      
+
 
       <div className="flex flex-col justify-center items-center text-center px-4">
         <div className="bg-white text-[#2B3990] px-5 mb-5 py-2 w-[200px] rounded-full text-sm font-semibold">
           Awards & Achievements
         </div>
         <h2 className="text-[30px]">
-          Providing Better Help With <br/> Expert Care
+          Providing Better Help With <br /> Expert Care
         </h2>
-        
+
       </div>
 
       <div>
@@ -170,15 +179,15 @@ const Awards = () => {
       </div>
 
       <Marquee
-              speed={50}
-              gradient={false}
-              pauseOnHover={true}
-              className="py-8"
-            >
-              <span className="mx-4 text-[#D5DAE5] font-extrabold text-[76px]">
-                Trusted Healthcare Partners
-              </span>
-            </Marquee>
+        speed={50}
+        gradient={false}
+        pauseOnHover={true}
+        className="py-8"
+      >
+        <span className="mx-4 text-[#D5DAE5] font-extrabold text-[76px]">
+          Trusted Healthcare Partners
+        </span>
+      </Marquee>
 
       <section className="max-w-7xl mx-auto px-4 py-16 relative">
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
@@ -195,7 +204,7 @@ const Awards = () => {
               </p>
               <button className="btn-diagonal bg-[#2B3990] mt-2 text-[#fff] text-[15px] pt-3 pb-3 pr-7 pl-7 rounded-full transition flex gap-2 hover:-translate-y-[3px] transition-transform duration-200">
                 Book an Appointment <ArrowUpRight className="w-5 h-5" />
-               
+
               </button>
             </div>
           </div>
@@ -215,13 +224,13 @@ const Awards = () => {
                 {consultSlides.map((img, idx) => (
                   <div key={idx}>
                     <div className="overflow-hidden rounded-2xl">
-                    <div className="doc">
+                      <div className="doc">
                         <Image
-                        src={img}
-                        alt={`Consult ${idx + 1}`}
-                        className="w-full h-auto object-cover"
-                      />
-                    </div>
+                          src={img}
+                          alt={`Consult ${idx + 1}`}
+                          className="w-full h-auto object-cover"
+                        />
+                      </div>
                     </div>
                   </div>
                 ))}

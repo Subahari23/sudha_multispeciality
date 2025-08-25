@@ -64,10 +64,10 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 
 const breadcrumbItems = [
-    { label: "Home", href: "/" },
-    { label: "About Us", href: "" },
-     { label: "Infrastructure", href: "/infrastructure" },
-  ];
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "" },
+  { label: "Infrastructure", href: "/infrastructure" },
+];
 
 
 
@@ -197,12 +197,18 @@ function Gallery() {
   };
   return (
     <div>
-      <section className="relative -mt-20 lg:-mt-[100px] m-10">
+      <section className="relative -mt-24 sm:-mt-20 md:-mt-24 lg:-mt-26 mx-2 sm:mx-2 md:mx-2 lg:mx-2">
         {/* Banner Container */}
         <div
-          className="relative top-6 max-w-full mx-auto px-4 py-36 z-10 text-white bg-center bg-no-repeat bg-cover lbg-contain rounded-3xl overflow-hidden banner"
+          className="
+      relative top-6 max-w-full mx-auto px-4 py-36 z-10 
+      text-white bg-center bg-no-repeat bg-cover
+      rounded-b-3xl md:rounded-b-3xl 
+      overflow-hidden banner
+    "
           style={{ backgroundImage: `url(${Banner.src})` }}
         >
+
           <div className="pl-8 md:pl-20">
             {/* Breadcrumb */}
             <motion.div
@@ -294,8 +300,8 @@ function Gallery() {
                 key={tab}
                 onClick={() => handleTabChange(tab)}
                 className={`px-4 py-2 text-sm font-medium transition ${activeTab === tab
-                    ? "border-b-[#2B3990] border text-black font-semibold"
-                    : "bg-transparent border-gray-300 text-gray-600 hover:bg-gray-100"
+                  ? "border-b-[#2B3990] border text-black font-semibold"
+                  : "bg-transparent border-gray-300 text-gray-600 hover:bg-gray-100"
                   }`}
               >
                 {tab}

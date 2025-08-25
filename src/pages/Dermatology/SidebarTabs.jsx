@@ -69,14 +69,12 @@ export default function SidebarTabs() {
                   >
                     <div className="flex items-center gap-3 sm:gap-4">
                       <span
-                        className={`w-2 h-2 rounded-full transition-colors duration-300 ${
-                          isActive ? "bg-[#2b3990]" : "bg-gray-300"
-                        }`}
+                        className={`w-2 h-2 rounded-full transition-colors duration-300 ${isActive ? "bg-[#2b3990]" : "bg-gray-300"
+                          }`}
                       />
                       <span
-                        className={`text-sm sm:text-base md:text-[15px] font-bold transition-colors duration-300 ${
-                          isActive ? "text-[#2b3990]" : "text-black"
-                        } group-hover:text-[#2A3D90]`}
+                        className={`text-sm sm:text-base md:text-[15px] font-bold transition-colors duration-300 ${isActive ? "text-[#2b3990]" : "text-black"
+                          } group-hover:text-[#2A3D90]`}
                       >
                         {item.label}
                       </span>
@@ -130,10 +128,10 @@ export default function SidebarTabs() {
         </div>
 
         {/* Find a Doctor Box */}
- 
 
 
-   {/* Find a Doctor Box */}
+
+        {/* Find a Doctor Box */}
         <div
           className="mt-2 rounded-2xl px-6 py-6 flex flex-col sm:flex-row items-center justify-between text-white"
           style={{
@@ -158,26 +156,26 @@ export default function SidebarTabs() {
       </aside>
 
       {/* Content Sections */}
-      <div className="flex-1 space-y-8 sm:space-y-10 md:space-y-12">
+      <div className="flex-1 space-y-4 xs:space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-12">
         {serviceSections.map(({ id }) => (
           <section
             key={id}
             id={id}
-            className="scroll-mt-24 sm:scroll-mt-28 md:scroll-mt-32 rounded-xl"
+            className="scroll-mt-20 xs:scroll-mt-22 sm:scroll-mt-24 md:scroll-mt-28 lg:scroll-mt-32 rounded-xl"
           >
             {id === "overview" && (
-              <div className="space-y-3 sm:space-y-4">
+              <div className="space-y-2 xs:space-y-3 sm:space-y-4 md:space-y-5">
                 <Image
                   src={aboutOverview}
                   alt="aboutOverview"
-                  className="w-full h-[220px] sm:h-[300px] md:h-[400px] rounded-2xl object-cover"
+                  className="w-full h-[200px] xs:h-[240px] sm:h-[280px] md:h-[340px] lg:h-[400px] xl:h-[450px] rounded-xl xs:rounded-2xl object-cover"
                 />
-                <h2 className="text-xl sm:text-2xl md:text-[24px] font-bold">
+                <h2 className="text-lg xs:text-xl sm:text-2xl md:text-[22px] lg:text-[24px] xl:text-[26px] font-bold leading-tight">
                   Dermatology Services and Skin Treatments at{" "}
                   <span className="text-[#2B3990]">Sudha</span>{" "}
                   Multispeciality Hospital
                 </h2>
-                <p className="text-sm sm:text-base leading-relaxed">
+                <p className="text-xs xs:text-sm sm:text-[14px] md:text-[13px] lg:text-sm xl:text-[15px] leading-relaxed text-gray-600">
                   The Dermatology Department at Sudha Multispeciality Hospital
                   provides expert diagnosis and advanced treatment for a wide
                   spectrum of skin, hair, and nail conditions. Our team of
@@ -189,13 +187,12 @@ export default function SidebarTabs() {
                 </p>
               </div>
             )}
-
             {id === "facilities" && (
               <>
-                <h2 className="text-xl sm:text-2xl md:text-[24px] font-bold mt-4 sm:mt-5">
+                <h2 className="text-lg xs:text-xl sm:text-2xl md:text-[24px] lg:text-[26px] xl:text-[28px] font-bold mt-3 xs:mt-4 sm:mt-5 md:mt-6">
                   Facilities
                 </h2>
-                <ul className="mt-3 space-y-2 sm:space-y-3">
+                <ul className="mt-2 xs:mt-3 sm:mt-4 space-y-1.5 xs:space-y-2 sm:space-y-3 md:space-y-3.5">
                   {[
                     "Dedicated consultation suites for skin evaluation",
                     "Minor procedure room for outpatient dermatological procedures",
@@ -206,42 +203,31 @@ export default function SidebarTabs() {
                   ].map((facility, i) => (
                     <li
                       key={i}
-                      className="flex gap-2 items-center text-gray-700 text-sm sm:text-[15px] font-semibold"
+                      className="flex gap-2 xs:gap-2.5 sm:gap-3 items-start text-gray-700 text-xs xs:text-sm sm:text-[15px] md:text-base lg:text-[15px] font-semibold leading-relaxed"
                     >
-                      <div className="w-2 h-2 rounded-lg bg-[#2B3990]" />
-                      {facility}
+                      <div className="w-1.5 h-1.5 xs:w-2 xs:h-2 sm:w-2 sm:h-2 rounded-lg bg-[#2B3990] flex-shrink-0 mt-1.5 xs:mt-2" />
+                      <span className="flex-1">{facility}</span>
                     </li>
                   ))}
                 </ul>
               </>
             )}
-
             {id === "treatmentsandprocedures" && (
-              <div className="space-y-2">
-                <h2 className="text-xl sm:text-2xl md:text-[24px] font-bold mt-5 mb-3">
+              <div className="space-y-1.5 xs:space-y-2 sm:space-y-3">
+                <h2 className="text-lg xs:text-xl sm:text-2xl md:text-[24px] lg:text-[26px] xl:text-[28px] font-bold mt-4 xs:mt-5 sm:mt-6 mb-2 xs:mb-3 sm:mb-4">
                   Treatments and Procedures
                 </h2>
                 <Accordion accordionData={[]} />
               </div>
             )}
-
             {id === "doctors" && (
               <>
-                <h2 className="text-xl sm:text-2xl md:text-[24px] font-bold mt-5 pb-3">
+                <h2 className="text-lg xs:text-xl sm:text-2xl md:text-[24px] lg:text-[26px] xl:text-[28px] font-bold mt-4 xs:mt-5 sm:mt-6 pb-2 xs:pb-3 sm:pb-4">
                   Doctors
                 </h2>
                 <DoctorSlider />
               </>
             )}
-
-            {/* {id === "faqs" && (
-              <div className="mt-6 sm:mt-8">
-                <h2 className="text-xl sm:text-2xl md:text-[24px] font-bold pb-3">
-                  FAQ
-                </h2>
-                <Faq faq={[]} />
-              </div>
-            )} */}
           </section>
         ))}
       </div>

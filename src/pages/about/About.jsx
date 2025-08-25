@@ -74,13 +74,17 @@ function Aboutus() {
   };
   return (
     <div>
-      <section className="relative -mt-12 lg:-mt-24 m-10 pt-4">
+      <section className="relative px-5 -mt-24 sm:-mt-20 md:-mt-24 lg:-mt-26 mx-2 sm:mx-2 md:mx-2 lg:mx-2">
         {/* Background Gradient */}
         <div
-          className="max-w-full mx-auto px-4 py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover  banner"
+          className="relative top-6 max-w-full mx-auto  py-36 z-10 text-white
+                        bg-center bg-no-repeat bg-cover
+                        rounded-3xl   
+                        overflow-hidden         
+                        banner"
           style={{ backgroundImage: `url(${Banner.src})` }}
         >
-          <div className="pl-8 md:pl-20">
+          <div className="max-w-7xl mx-auto">
             {/* Breadcrumb */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -123,7 +127,7 @@ function Aboutus() {
         </div>
       </section>
       <section>
-        <div className="px-4 sm:px-6 md:px-8 lg:px-16 py-12 pb-16 ml-4 mr-4">
+        <div className=" max-w-7xl mx-auto  my-20 h-full">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -266,35 +270,34 @@ function Aboutus() {
             Trusted Healthcare Partners
           </span>
         </Marquee>
-        <div className="max-w-7xl mx-auto  py-8  h-full">
+        <div className="max-w-7xl mx-auto  px-4 sm:px-6 md:px-8 lg:px-0 py-8  h-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Vision */}
-            <div className="bg-[#CBE1FB] rounded-2xl p-8  text-left">
-              <h3 className="text-[20px] mb-3">
-                Our Vision
-              </h3>
+            <div className="bg-[#CBE1FB] rounded-2xl p-8 text-left">
+              <h3 className="text-[20px] mb-3">Our Vision</h3>
               <p className="text-black text-[14px]">
-                Become a trusted healthcare leader by providing compassionate, advanced, and accessible care, empowering healthier communities through excellence and innovation.
+                Become a trusted healthcare leader by providing compassionate,
+                advanced, and accessible care, empowering healthier communities
+                through excellence and innovation.
               </p>
             </div>
 
             {/* Mission */}
-            <div className="bg-[#D5F2E3] rounded-2xl p-8  text-left">
-              <h3 className="text-[20px] mb-3">
-                Our Mission
-              </h3>
+            <div className="bg-[#D5F2E3] rounded-2xl p-8 text-left">
+              <h3 className="text-[20px] mb-3">Our Mission</h3>
               <p className="text-black text-[14px]">
-                To make quality healthcare accessible by blending innovation, medical excellence, and compassion while ensuring value-driven treatment for all.
+                To make quality healthcare accessible by blending innovation,
+                medical excellence, and compassion while ensuring value-driven
+                treatment for all.
               </p>
             </div>
 
             {/* Values */}
-            <div className="bg-[#DAD3F9] rounded-2xl p-8  text-left">
-              <h3 className="text-[20px] mb-3">
-                Our Values
-              </h3>
+            <div className="bg-[#DAD3F9] rounded-2xl p-8 text-left">
+              <h3 className="text-[20px] mb-3">Our Values</h3>
               <p className="text-black text-[14px]">
-                We believe in ethical care, compassion, medical excellence, respect, innovation, teamwork, and putting every patient’s needs at the heart.
+                We believe in ethical care, compassion, medical excellence, respect,
+                innovation, teamwork, and putting every patient’s needs at the heart.
               </p>
             </div>
           </div>

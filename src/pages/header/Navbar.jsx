@@ -82,7 +82,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="hidden md:block text-sm text-black py-2 px-4 max-w-7xl mx-auto">
+      <div className="hidden md:block text-sm text-black py-4 max-w-7xl mx-auto">
         <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center gap-y-2">
           {/* Left - Welcome Text */}
           <p className="text-center md:text-left ">UpComing Events</p>
@@ -113,7 +113,7 @@ export default function Navbar() {
 
       <header
         className={cn(
-          "sticky top-0 z-50 max-w-7xl mx-auto text-sm transition-all px-4 py-3 supports-[backdrop-filter]:bg-background-transparent",
+          "sticky top-0 z-50 py-3  mb-navbar max-w-7xl mx-auto text-sm transition-all supports-[backdrop-filter]:bg-background-transparent",
           isScrolled
             ? "w-full bg-white text-black"
             : isWhitePage
@@ -348,9 +348,9 @@ export default function Navbar() {
                   className={cn(
                     " btn-diagonal flex items-center gap-2 text-[14px] pt-3 pb-3 pr-8 pl-8 rounded-full transition letter-space",
                     isScrolled
-                      ? "bg-[#2B3990] text-white shadow-sm shadow-accent border-b border-accent"
+                      ? "bg-[#ffffff] text-[#2B3990] text-[14px] shadow-sm shadow-accent border-b border-accent"
                       : isWhitePage
-                        ? "bg-white text-[#2B3990] hover:bg-[#ffffff] hover:text-white"
+                        ? "bg-white text-[#2B3990] hover:bg-[#2B3990] hover:text-[#2B3990]"
                         : "bg-[#2B3990] text-white hover:bg-[#ffffff]"
                         ? "bg-white text-[#2B3990] hover:bg-gray-100"
                         : "bg-[#2B3990] text-white hover:bg-[#1f2f70]"

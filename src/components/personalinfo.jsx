@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import RegistrationForm from './Appointment';
-import Tick from '../assets/Doctordetails/check 1.png';
+import Tick from '../assets/doctordetails/check.png';
 import Image from "next/image";
 import { motion } from 'framer-motion';
 

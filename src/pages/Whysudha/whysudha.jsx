@@ -197,17 +197,23 @@ function Whysudha() {
     },
   };
 
-  const [openIndex, setOpenIndex] = useState(0); 
+  const [openIndex, setOpenIndex] = useState(0);
 
   const toggleAccordion = (index) => {
     setOpenIndex((prev) => (prev === index ? null : index));
   };
   return (
     <div>
-      <section className="relative -mt-20 lg:-mt-[100px] m-10">
+      <section className="relative -mt-24 sm:-mt-20 md:-mt-24 lg:-mt-26 mx-2 sm:mx-2 md:mx-2 lg:mx-2">
         {/* Banner Container */}
         <div
-          className="relative top-6 max-w-full mx-auto px-4 py-36 z-10 text-white bg-center bg-no-repeat bg-cover lbg-contain rounded-3xl overflow-hidden banner"
+          className="
+            relative top-6 max-w-full mx-auto px-4 py-36 z-10 text-white
+            bg-center bg-no-repeat bg-cover
+            rounded-b-3xl   
+            overflow-hidden         
+            banner
+          "
           style={{ backgroundImage: `url(${Banner.src})` }}
         >
           <div className="pl-8 md:pl-20">
@@ -246,7 +252,7 @@ function Whysudha() {
 
           <div className="absolute bottom-[10px] hidden md:block right-4 sm:right-10 md:-right-[35px] z-30 text-[#2B3990] p-4 pt-5 rounded-xl w-[220px] ">
             <h3 className="text-[36px] font-bold mt-1 mb-1">40+</h3>
-            <p className="text-lg leading-snug text-black font-semibold">
+            <p className="text-lg leading-snug text-black font-semibold mb-1">
               Years of Trusted <br />
               Expertise in <br />
               Healthcare
@@ -256,7 +262,7 @@ function Whysudha() {
       </section>
 
       <section>
-        <div className="max-w-7xl mx-auto pt-8 pb-16 h-full">
+        <div className="max-w-7xl mx-auto px-4 pt-14 pb-16 h-full">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -278,8 +284,8 @@ function Whysudha() {
         </div>
       </section>
 
-      <section className=" py-16 ">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-6 lg:px-8 xl:px-6 2xl:px-6 flex flex-col md:flex-row items-center gap-8">
           {/* Left Text Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -288,20 +294,18 @@ function Whysudha() {
             viewport={{ once: true }}
             className="flex-1"
           >
-            <span className="inline-block mb-2 px-4 py-1 mb-4 font-semibold bg-white text-[#2B3990] rounded-full ">
+            <span className="inline-block mb-2 px-4 py-1 mb-4 font-semibold bg-white text-[#2B3990] rounded-full">
               About us
             </span>
-            <h2 className="text-[30px] font-bold mb-4">
-              Sudha Overview?
-            </h2>
-            <p className="">
-              Sudha Multispeciality Hospital in Erode was established in 1985 by
-              the Kandasamy Charitable Trust to care for Women and Children.
-              Since then, this institution has grown to encompass the entire
-              spectrum of multi specialties of healthcare under one roof. Being
-              the most renowned, trusted and the best hospital in Erode, we take
-              utmost care in treating the people with the most advanced
-              technologies that help people to recover quickly.
+            <h2 className="text-[30px] font-bold mb-4">Sudha Overview?</h2>
+            <p>
+              Sudha Multispeciality Hospital in Erode was established in 1985 by the
+              Kandasamy Charitable Trust to care for Women and Children. Since then,
+              this institution has grown to encompass the entire spectrum of multi
+              specialties of healthcare under one roof. Being the most renowned,
+              trusted and the best hospital in Erode, we take utmost care in treating
+              the people with the most advanced technologies that help people to
+              recover quickly.
             </p>
           </motion.div>
 
@@ -326,21 +330,21 @@ function Whysudha() {
 
 
       <section>
-        <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 h-full bg-[#FFFFFF] rounded-3xl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16 py-16 h-full bg-[#FFFFFF] rounded-3xl">
           <div className="text-center">
-            <div className="flex items-center justify-center  mb-4">
-              <span className="bg-blue px-5  py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+            <div className="flex items-center justify-center mb-4">
+              <span className="bg-blue px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
                 Trusted by People
               </span>
             </div>
 
             <h2 className="text-[30px] mt-3">
-              Why Sudha is the Best Multispeciality Hospital <br />in Erode?
+              Why Sudha is the Best Multispeciality Hospital <br /> in Erode?
             </h2>
-
           </div>
 
-          <div className="max-w-7xl mx-auto px-4 py-10">
+          {/* Removed duplicate px-4 wrapper and kept padding responsive here */}
+          <div className="mt-10">
             <div className="flex flex-col md:flex-row gap-6">
               {/* Left Side - Image */}
               <div className="w-full md:w-1/2">
@@ -354,10 +358,7 @@ function Whysudha() {
               {/* Right Side - Accordion */}
               <div className="w-full md:w-1/2 space-y-4">
                 {accordionData.map((item, index) => (
-                  <div
-                    key={index}
-                    className="border-b border-gray-300  overflow-hidden"
-                  >
+                  <div key={index} className="border-b border-gray-300 overflow-hidden">
                     <button
                       className="w-full flex justify-between items-center p-4 focus:outline-none"
                       onClick={() => toggleAccordion(index)}
@@ -368,12 +369,9 @@ function Whysudha() {
                           {item.title}
                         </span>
                       </div>
-                      <span className="text-sm">
-                        {openIndex === index ? "−" : "+"}
-                      </span>
+                      <span className="text-sm">{openIndex === index ? "−" : "+"}</span>
                     </button>
 
-                    {/* AnimatePresence + motion.div for smooth expand */}
                     <AnimatePresence initial={false}>
                       {openIndex === index && (
                         <motion.div
@@ -392,10 +390,9 @@ function Whysudha() {
               </div>
             </div>
           </div>
-
-          <div></div>
         </div>
       </section>
+
 
       <section className="py-12 px-4">
         <div className="max-w-7xl mx-auto">

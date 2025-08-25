@@ -131,7 +131,7 @@ export default function CourseDetail() {
                 </div>
 
                 {/* Right side sticky form */}
-                <div className="md:col-span-6 bg-white rounded-lg p-6 sticky top-6 h-fit shadow">
+                <div className="md:col-span-6 bg-white rounded-lg p-6 sticky top-6 h-fit ">
                     <h2 className="text-xl font-bold mb-2">Enroll Now!</h2>
                     <p className="text-gray-600 mb-4">Personal Details</p>
 

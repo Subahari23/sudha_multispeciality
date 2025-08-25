@@ -105,7 +105,7 @@ const BannerSlider = () => {
       disableOnInteraction: false,
     }}
     onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-    className="w-full h-full rounded-3xl"
+    className=" h-full top-6  mx-auto px-4 py-36 rounded-3xl"
   >
     {slides.map((slide, index) => (
       <SwiperSlide key={index}>
@@ -131,7 +131,7 @@ const BannerSlider = () => {
 
           {/* 🔹 Text Content */}
           <div className="absolute z-10 top-[50%] -translate-y-[50%] text-white max-w-xl">
-            <div className="pl-8 md:pl-20">
+            <div className="pl-8 md:pl-20 mb-p">
               <div className="flex">
                 <h2 className="bg-white text-[#2B3990] flex gap-4 px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold">
                   <GoThumbsup className="size-5 text-[#1ED348]" />

@@ -21,9 +21,9 @@ import { ArrowUpRight } from "lucide-react";
 const consultSlides = [consult1, consult2, consult3];
 
 const breadcrumbItems = [
-    { label: "Home", href: "/" },
-    { label: "Emergency Care", href: "/emergency-care" },
-  ];
+  { label: "Home", href: "/" },
+  { label: "Emergency Care", href: "/emergency-care" },
+];
 
 function Emergencycare() {
   const settings = {
@@ -42,7 +42,7 @@ function Emergencycare() {
   };
   return (
     <div>
-    <section className="relative -mt-12 lg:-mt-28 m-10">
+      <section className="relative -mt-16 sm:-mt-20 md:-mt-24 lg:-mt-28 mx-2 sm:mx-2 md:mx-4 lg:mx-6 overflow-hidden">
         {/* Background Gradient */}
         <div
           className="max-w-full mx-auto px-4 py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain banner min-h-400"
@@ -56,7 +56,7 @@ function Emergencycare() {
               transition={{ duration: 0.4 }}
               className="text-sm mb-4"
             >
-              <Breadcrumb items={breadcrumbItems} />             
+              <Breadcrumb items={breadcrumbItems} />
             </motion.div>
 
             {/* Title */}
@@ -66,7 +66,7 @@ function Emergencycare() {
               transition={{ duration: 0.5 }}
               className="text-[44px]  mb-3"
             >
-              Advanced Emergency Complex   
+              Advanced Emergency Complex
             </motion.h1>
 
             {/* Subtitle */}
@@ -76,7 +76,7 @@ function Emergencycare() {
               transition={{ duration: 0.6 }}
               className="mb-6 text-white"
             >
-             Emergency Care That’s Always Ready To Save Lives               
+              Emergency Care That’s Always Ready To Save Lives
             </motion.p>
 
             {/* Button */}
@@ -84,11 +84,11 @@ function Emergencycare() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
+              className="flex justify-center sm:justify-start"
             >
               <Link
                 href="#"
-                className="btn-white inline-flex  text-[16px] tracking-wide items-center px-7 py-3 bg-white text-[#2B3990] font-semibold rounded-full  transition hover:-translate-y-[3px] transition-transform duration-200"
-              >
+                className="btn-white inline-flex items-center whitespace-nowrap text-[14px] sm:text-[16px] tracking-wide px-4 sm:px-7 py-2 sm:py-3 bg-white text-[#2B3990] font-semibold rounded-full transition hover:-translate-y-[3px] transition-transform duration-200">
                 Book an Appointment <ArrowUpRight className="w-5 h-5" />
               </Link>
             </motion.div>
@@ -132,7 +132,7 @@ function Emergencycare() {
               </p>
               <button className="btn-diagonal inline-flex items-center text-white bg-[#2B3990] hover:bg-[#1e2a70] px-7 py-3 rounded-full text-sm font-medium hover:-translate-y-[3px] transition-transform duration-200">
                 Book an Appointment
-              <ArrowUpRight className="w-5 h-5" />
+                <ArrowUpRight className="w-5 h-5" />
               </button>
             </div>
           </div>

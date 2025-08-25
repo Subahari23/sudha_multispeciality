@@ -206,7 +206,7 @@ export default function CentreOfExcellence() {
 
         {/* Cards Container */}
 
-        <div className="relative">
+        <div className="relative mb-m">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-7xl mx-auto">
             {getCurrentItems().map((item) => (
               <div

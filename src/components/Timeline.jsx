@@ -153,7 +153,7 @@ export default function TimelineSlider() {
                     {/* No bottom line — just text */}
                     <div className="mt-6 bg-white/10 backdrop-blur-md mx-auto  text-center p-4 rounded-xl max-w-sm z-10">
                       <h3 className="text-xl font-bold">{item.year}</h3>
-                      <p className="font-semibold">{item.title}</p>
+                      <p className="font-semibold text-white">{item.title}</p>
                       <p className="text-sm text-white/80 mt-2">{item.desc}</p>
                     </div>
                   </>
@@ -162,7 +162,7 @@ export default function TimelineSlider() {
                     {/* TEXT on top */}
                     <div className="mb-6 bg-white/10 backdrop-blur-md mx-auto text-center p-4 rounded-xl max-w-sm z-10">
                       <h3 className="text-xl font-bold">{item.year}</h3>
-                      <p className="font-semibold">{item.title}</p>
+                      <p className="font-semibold text-white">{item.title}</p>
                       <p className="text-sm text-white/80 mt-2">{item.desc}</p>
                     </div>
 

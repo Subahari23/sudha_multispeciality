@@ -139,7 +139,7 @@ const Footer = () => {
 
       <BookAppointmentModal open={openModal} onClose={() => setOpenModal(false)} />
 
-      <div className=" text-gray-700 pt-9 relative z-20">
+      <div className=" text-gray-700 pt-9 relative z-20 mb-m">
         <div className="max-w-7xl mx-auto p-8  bg-gradient-to-r from-[#2A3D90] to-[#0C122A] text-white rounded-3xl">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 ">
             {/* Left: Logo + About */}
@@ -200,17 +200,17 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
             >
               {/* Location 1 */}
-              <div>
+              <div className="mb-center text-start">
                 <h4 className="mb-2">Sudha Multispeciality Hospital</h4>
-                <p className="text-[#FFF] flex gap-3 mt-7">
+                <p className="text-[#FFF] flex gap-3 mt-7 mb-center">
                   <MdOutlineLocationOn className="size-8" />
                   No. 162, 1B1, Perundurai Rd, Edayankattuvalsu, Erode, Tamil Nadu 638011
                 </p>
-                <p className="text-[#FFF] mt-7 flex gap-3">
+                <p className="text-[#FFF] mt-7 flex gap-3 mb-center">
                   <IoMail className="size-5" />
                   care@sudhahospitals.com
                 </p>
-                <div className="text-[#FFF] flex gap-3 mt-7">
+                <div className="text-[#FFF] flex gap-3 mt-7 mb-center">
                   <IoCall className="size-6" />
                   <div>
                     <a
@@ -357,7 +357,7 @@ const Footer = () => {
               <Image src={WhatsApp} alt="WhatsApp" className="w-6 h-6 object-contain" />
             </span>
             {/* Mobile Label */}
-            <span className="block sm:hidden mt-1 text-center">Chat with <br/> WhatsApp</span>
+            <span className="block sm:hidden mt-1 text-center">Chat with <br /> WhatsApp</span>
             {/* Desktop Hover Label */}
             {showMessageText && (
               <span className="hidden sm:block text-blue-900 text-sm md:text-[14px] whitespace-nowrap transition-opacity duration-300">

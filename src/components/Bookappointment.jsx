@@ -8,7 +8,7 @@ import './bookappointment.css';
 function Bookappointment() {
   return (
     <div>
-      <section className="relative bg-[#EEF6FF] py-16  overflow-hidden">
+      <section className="relative bg-[#EEF6FF] py-16 mb-m overflow-hidden">
         <div className="max-w-7xl mx-auto  h-full">
           <div className="flex flex-col lg:flex-row gap-8">
             <div className="w-full lg:w-1/2">

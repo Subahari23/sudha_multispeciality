@@ -4,6 +4,7 @@ import Doctor1 from "@/assets/Ourmanagement/Doctor1.png";
 import Doctor2 from "@/assets/Ourmanagement/Doctor2.png";
 import Doctor3 from "@/assets/Ourmanagement/Doctor3.png";
 import calenter from "@/assets/Ourmanagement/calendar-2.png"
+
 import Link from 'next/link';
 
 const Executiveteam = () => {

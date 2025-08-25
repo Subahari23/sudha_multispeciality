@@ -43,13 +43,13 @@ function Obstetricsandgynaecology() {
   };
   return (
     <div>
-      <section className="relative -mt-12 lg:-mt-28 m-10">
-          {/* Background Gradient */}
-          <div
-            className="max-w-full mx-auto px-4 py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain banner min-h-400"
-            style={{ backgroundImage: `url(${Banner.src})` }}
-          >
-            <div className="pl-8 md:pl-20">
+      <section className="relative -mt-16 sm:-mt-20 md:-mt-24 lg:-mt-28 mx-2 sm:mx-2 md:mx-4 lg:mx-6 overflow-hidden">
+        {/* Background Gradient */}
+        <div
+          className="max-w-full mx-auto px-4 py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain banner min-h-400"
+          style={{ backgroundImage: `url(${Banner.src})` }}
+        >
+          <div className="pl-8 md:pl-20">
             {/* Breadcrumb */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -88,8 +88,7 @@ function Obstetricsandgynaecology() {
             >
               <Link
                 href="#"
-                className="btn-white inline-flex  text-[16px] tracking-wide items-center px-7 py-3 bg-white text-[#2B3990] font-semibold rounded-full  transition hover:-translate-y-[3px] transition-transform duration-200"
-              >
+                className="btn-white inline-flex items-center whitespace-nowrap text-[14px] sm:text-[16px] tracking-wide px-4 sm:px-7 py-2 sm:py-3 bg-white text-[#2B3990] font-semibold rounded-full transition hover:-translate-y-[3px] transition-transform duration-200">
                 Book an Appointment <ArrowUpRight className="w-5 h-5" />
               </Link>
             </motion.div>
@@ -135,7 +134,7 @@ function Obstetricsandgynaecology() {
               </p>
               <button className="btn-diagonal inline-flex items-center text-white bg-[#2B3990] hover:bg-[#1e2a70] px-7 py-3 rounded-full text-sm font-medium hover:-translate-y-[3px] transition-transform duration-200">
                 Book an Appointment
-               <ArrowUpRight className="w-5 h-5" />
+                <ArrowUpRight className="w-5 h-5" />
               </button>
             </div>
           </div>
@@ -174,8 +173,8 @@ function Obstetricsandgynaecology() {
         </div>
       </section>
 
-      
-        <section>
+
+      <section>
         <Bookappointment />
       </section>
     </div>

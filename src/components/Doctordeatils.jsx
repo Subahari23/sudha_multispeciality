@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from "next/image";
-import clinic from "../assets/Doctordetails/id1.jpg";
-import Doclogo from "../assets/Doctordetails/Doclogo.png";
+import clinic from "../assets/doctordetails/profile.jpg";
+import Doclogo from "../assets/doctordetails/doclogo.png";
 import { motion } from "framer-motion";
 
 const Doctordeatils = ({ doctor }) => {

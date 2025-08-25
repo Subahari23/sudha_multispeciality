@@ -22,9 +22,9 @@ import { ArrowUpRight } from "lucide-react";
 const consultSlides = [consult1, consult2, consult3];
 
 const breadcrumbItems = [
-    { label: "Home", href: "/" },
-    { label: "Urology", href: "/urology" },
-  ];
+  { label: "Home", href: "/" },
+  { label: "Urology", href: "/urology" },
+];
 
 function Urology() {
   const settings = {
@@ -43,7 +43,7 @@ function Urology() {
   };
   return (
     <div>
-    <section className="relative -mt-12 lg:-mt-28 m-10">
+      <section className="relative -mt-16 sm:-mt-20 md:-mt-24 lg:-mt-28 mx-2 sm:mx-2 md:mx-4 lg:mx-6 overflow-hidden">
         {/* Background Gradient */}
         <div
           className="max-w-full mx-auto px-4 py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain banner min-h-400"
@@ -57,7 +57,7 @@ function Urology() {
               transition={{ duration: 0.4 }}
               className="text-sm mb-3"
             >
-             <Breadcrumb items={breadcrumbItems} />         
+              <Breadcrumb items={breadcrumbItems} />
             </motion.div>
 
             {/* Title */}
@@ -67,7 +67,7 @@ function Urology() {
               transition={{ duration: 0.5 }}
               className="text-[44px]  mb-3"
             >
-              Urology      
+              Urology
             </motion.h1>
 
             {/* Subtitle */}
@@ -77,7 +77,7 @@ function Urology() {
               transition={{ duration: 0.6 }}
               className="mb-6 text-white"
             >
-              Specialised Urology Care for a Healthier Tomorrow        
+              Specialised Urology Care for a Healthier Tomorrow
             </motion.p>
 
             {/* Button */}
@@ -88,8 +88,7 @@ function Urology() {
             >
               <Link
                 href="#"
-                className="btn-white inline-flex  text-[16px] tracking-wide items-center px-7 py-3 bg-white text-[#2B3990] font-semibold rounded-full  transition hover:-translate-y-[3px] transition-transform duration-200"
-              >
+                className="btn-white inline-flex items-center whitespace-nowrap text-[14px] sm:text-[16px] tracking-wide px-4 sm:px-7 py-2 sm:py-3 bg-white text-[#2B3990] font-semibold rounded-full transition hover:-translate-y-[3px] transition-transform duration-200">
                 Book an Appointment <ArrowUpRight className="w-5 h-5" />
               </Link>
             </motion.div>

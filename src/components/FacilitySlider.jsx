@@ -78,7 +78,7 @@ export default function FacilitySlider() {
   };
 
   return (
-    <section className="bg-[#EEF8FF]  pb-40  rounded-2xl">
+    <section className="bg-[#EEF8FF] mb-m  pb-40  rounded-2xl">
       <div className="max-w-7xl mx-auto relative">
         <Slider {...settings} className="relative">
           {facilities.map((facility, index) => (

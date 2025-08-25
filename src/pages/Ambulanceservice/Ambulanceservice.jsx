@@ -43,7 +43,7 @@ const Ambulanceservice = () => {
   };
   return (
     <div>
-      <section className="relative -mt-20 lg:-mt-[100px] m-10">
+      <section className="relative -mt-24 sm:-mt-20 md:-mt-24 lg:-mt-28 mx-2 sm:mx-2 md:mx-4 lg:mx-6 overflow-hidden">
         {/* Banner Container */}
         <div
           className="relative top-6 max-w-full mx-auto px-4 py-36 z-10 text-white bg-center bg-no-repeat bg-cover lbg-contain rounded-3xl overflow-hidden banner"

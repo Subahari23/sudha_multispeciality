@@ -92,56 +92,64 @@ const Alliedhealthservice = () => {
     };
     return (
         <div>
-            <section className="relative -mt-12 lg:-mt-28 m-10">
-                {/* Background Gradient */}
+            <section className="relative -mt-16 md:-mt-20 lg:-mt-28 mx-4 sm:mx-6 md:-mt-10 lg:mx-18 -ml-18 -mr-17">
                 <div
-                    className="max-w-full mx-auto px-4 py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain banner"
+                    className="max-w-full mx-auto px-4 py-20 md:py-28 lg:py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain rounded-xl overflow-hidden min-h-[280px] md:min-h-[320px] lg:min-h-[400px]"
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
-                    <div className="pl-8 md:pl-20">
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.4 }}
-                            className="text-sm mb-3 text-white"
-                        >
-                            <Breadcrumb items={breadcrumbItems} />
+                    <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-2 relative h-full">
+                        <div className="pl-2 sm:pl-4 md:pl-4">
+                            {/* Breadcrumb */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.4 }}
+                                className="text-xs sm:text-sm md:text-base mb-2 sm:mb-3 text-white"
+                            >
+                                <Breadcrumb items={breadcrumbItems} />
+                            </motion.div>
 
-                        </motion.div>
+                            {/* Heading */}
+                            <motion.h1
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5 }}
+                                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 sm:mb-3 font-bold"
+                            >
+                                Allied Health Service
+                            </motion.h1>
 
-                        <motion.h1
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5 }}
-                            className=" text-[44px] mb-3"
-                        >
-                            Allied Health Service
-                        </motion.h1>
+                            {/* Subtext */}
+                            <motion.p
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6 }}
+                                className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-5 md:mb-6 text-white max-w-[90%] md:max-w-[80%] lg:max-w-[70%]"
+                            >
+                                Comprehensive Support for Complete Recovery
+                            </motion.p>
 
-                        <motion.p
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6 }}
-                            className=" mb-6 text-white"
-                        >
-                            Comprehensive Support for Complete Recovery
-                        </motion.p>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.7 }}
-                        >
-                            <button className="btn-white inline-flex items-center gap-2 bg-white text-[#2B3990] text-sm font-semibold px-5 py-4 rounded-full shadow text-[18px]">
-                                Book an Appointment <ArrowUpRight className="w-5 h-5" />
-                            </button>
-                        </motion.div>
-                        <div className="absolute bottom-0 right-4 sm:right-8 md:right-0 z-30 hidden md:block mb-9">
-                            <div className="w-[220px] overflow-hidden rounded-tl-xl rounded-br-xl">
-                                <div className="h-[20%] bg-transparent" />
-                                <div className="bg-white p-4">
-                                    <h3 className="text-[36px] font-bold text-[#2B3990]">40+</h3>
-                                    <p className="text-lg leading-snug text-black font-semibold">
+                            {/* Button */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.7 }}
+                            >
+                                <button className="btn-white inline-flex items-center gap-2 bg-white text-[#2B3990] 
+                     text-xs sm:text-sm md:text-base lg:text-lg font-semibold 
+                     px-4 sm:px-5 py-3 sm:py-4 rounded-full shadow-lg hover:bg-gray-100 transition-colors">
+                                    Book an Appointment <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
+                                </button>
+                            </motion.div>
+                        </div>
+                        
+                        <div className="absolute bottom-0 right-0 hidden md:block">
+                            <div className="w-[140px] md:w-[180px] lg:w-[200px] overflow-hidden rounded-tl-xl rounded-br-xl bg-white ">
+                                <div className="p-3 md:p-4">
+                                    <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2B3990]">
+                                        40+
+                                    </h3>
+                                    <p className="text-sm md:text-base lg:text-lg leading-snug text-black font-semibold">
                                         Years of Trusted <br />
                                         Expertise in <br />
                                         Healthcare
@@ -152,6 +160,8 @@ const Alliedhealthservice = () => {
                     </div>
                 </div>
             </section>
+
+
             <section>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 h-full">
                     <motion.div

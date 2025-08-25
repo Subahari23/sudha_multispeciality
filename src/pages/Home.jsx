@@ -318,12 +318,12 @@ function Home() {
     <>
 
 
-      <section className="relative -mt-20 m-10 z-index">
+      <section className="relative  px-7 hero-section -mt-28 mb-hero-section z-index">
         <BannerSlider />
       </section>
 
       <section>
-        <div className="max-w-7xl mx-auto py-8 h-full">
+        <div className="max-w-7xl mx-auto my-20 h-full">
           <motion.div
             variants={container}
             initial="hidden"
@@ -348,7 +348,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto  pt-16 pb-6">
+      <section className="max-w-7xl mx-auto  pt-16 pb-6 mb-m">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Image Block */}
           <motion.div
@@ -383,7 +383,7 @@ function Home() {
           </motion.div>
 
           {/* Content Block */}
-          <section className="px-4 sm:px-6 lg:px-8 py-10">
+          <section className="px-4 mb-p lg:px-8 py-10">
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -545,7 +545,7 @@ function Home() {
               />
 
               {/* Floating Info Badges */}
-              <div className="absolute bottom-6 right-4 sm:bottom-8 sm:right-6 bg-white shadow-lg rounded-2xl flex flex-col sm:flex-row gap-4 sm:gap-6 px-6 py-6 text-sm sm:text-md font-semibold text-[#2B3990] max-w-[90%] sm:max-w-none">
+              <div className="absolute bottom-6 right-4 sm:bottom-8 sm:left-6 bg-white shadow-lg rounded-2xl flex flex-col sm:flex-row gap-4 sm:gap-6 px-6 py-6 text-sm sm:text-md font-semibold text-[#2B3990] max-w-[90%] sm:max-w-none">
                 <div className="flex items-center gap-3 sm:gap-4">
                   <Image
                     src={inter}
@@ -640,15 +640,15 @@ function Home() {
         </div>
       </section>
 
-      <section>
-        <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 h-full bg-[#fff] rounded-[30px]">
+      <section className="mb-m ">
+        <div className="max-w-7xl mx-auto px-4 py-16 mb-p-5 sm:px-6 lg:px-8 h-full bg-[#fff] rounded-[30px]">
           <div className="flex flex-wrap">
             <div className="w-full md:w-1/2 text-center">
-              <Image src={review} alt="review" className="w-[80%] text-left" />
+              <Image src={review} alt="review" className="w-[80%] text-left mb-img" />
             </div>
             <div className="w-full md:w-1/2 flex items-center">
               <div>
-                <h3 className=" text-[30px]">
+                <h3 className=" text-[30px] mb-mt-2">
                   Testimonials of Trust From <br /> Those We've Served.
                 </h3>
 
@@ -669,7 +669,7 @@ function Home() {
         </div>
       </section>
 
-      <div id="book-appointment" className="py-16">
+      <div id="book-appointment" className="py-16 mb-p-5 ">
         <Bookappointment />
       </div>
     </>

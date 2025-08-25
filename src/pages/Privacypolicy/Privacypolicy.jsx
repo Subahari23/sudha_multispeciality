@@ -43,7 +43,7 @@ const Privacypolicy = () => {
 
 
                     <div className="absolute bottom-0 right-4 sm:right-10 md:right-[-40px] z-30 hidden md:block">
-                        <div className="w-[220px] shadow-md overflow-hidden rounded-tl-xl rounded-tr-xl rounded-br-xl">
+                        <div className="w-[220px]  overflow-hidden rounded-tl-xl rounded-tr-xl rounded-br-xl">
                             <div className="h-[30%] bg-transparent" />
                             <div className="bg-white p-4">
                                 <h3 className="text-[36px] font-bold text-[#2B3990]">40+</h3>

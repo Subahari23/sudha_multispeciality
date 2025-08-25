@@ -139,13 +139,19 @@ const Centreofexcellence = () => {
     return (
 
         <div>
-            <section className="relative -mt-20 lg:-mt-[100px] m-10">
+            <section className="relative px-7  hero-section -mt-28 mb-hero-section ">
                 {/* Banner Container */}
                 <div
-                    className="relative top-6 max-w-full mx-auto px-4 py-36 z-10 text-white bg-center bg-no-repeat bg-cover lbg-contain rounded-3xl overflow-hidden banner"
+                    className="
+                        relative top-6 max-w-full mx-auto px-4 py-36 z-10 text-white
+                        bg-center bg-no-repeat bg-cover
+                        rounded-3xl   
+                        overflow-hidden         
+                        banner
+                      "
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
-                    <div className="pl-8 md:pl-20">
+                    <div className="max-w-7xl mx-auto">
                         <motion.p
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -174,10 +180,10 @@ const Centreofexcellence = () => {
                     </div>
 
                     <div className="absolute bottom-0 right-4 sm:right-10 md:right-[-40px] z-30 hidden md:block">
-                        <div className="w-[220px] shadow-md overflow-hidden rounded-tl-xl rounded-tr-xl rounded-br-xl">
+                        <div className="w-[220px] overflow-hidden rounded-tl-xl rounded-tr-xl rounded-br-xl">
                             <div className="h-[30%] bg-transparent" />
                             <div className="bg-white p-4">
-                                <h3 className="text-[36px] font-bold text-[#2B3990]">40+</h3>
+                                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
                                 <p className="text-lg leading-snug text-black font-semibold">
                                     Years of Trusted <br />
                                     Expertise in <br />
@@ -191,7 +197,7 @@ const Centreofexcellence = () => {
             </section>
 
             <section>
-                <div className="max-w-7xl mx-auto pt-16 pb-16 h-full">
+                <div className=" max-w-7xl mx-auto  my-20 h-full">
                     <motion.div
                         variants={containerVariants}
                         initial="hidden"
@@ -213,21 +219,21 @@ const Centreofexcellence = () => {
                 </div>
             </section>
 
-            <section className="text-center  py-16">
+            <section className="text-center  lg:py-16 sm:py-10">
                 <div className="flex justify-center">
                     <h5 className="bg-white text-[#2B3990] px-5  py-2 rounded-full text-sm font-semibold">
                         Centre of Excellence
                     </h5>
                 </div>
 
-                <h2 className="text-[30px]  pt-3">
+                <h2 className="text-[30px] pt-3 mb-pb-5">
                     Delivering Excellence Through <br /> Specialised Healthcare Services
                 </h2>
 
             </section>
 
             {/*Cardiology-card  */}
-            <section className="bg-white rounded-3xl  p-8  max-w-7xl mx-auto flex flex-col md:flex-row gap-6 items-start ml-18">
+            <section className="bg-white rounded-3xl  p-8  mb-p mb-m  max-w-7xl mx-auto flex flex-col md:flex-row gap-6 items-start ml-18">
                 <div className="w-full md:w-1/3">
                     <Image
                         src={Heart}
@@ -238,11 +244,11 @@ const Centreofexcellence = () => {
                 </div>
 
                 {/* Content */}
-                <div className="w-full md:w-2/3 space-y-4 ml-5">
+                <div className="w-full md:w-2/3 space-y-4 lg:ml-5 md:ml-5 sm:ml-0">
                     <h3 className="text-[24px]">Cardiology</h3>
                     <p className="mb-5">
-                        Our Cardiology department offers expert care for a wide range of heart conditions, guided by experienced cardiologists and supported by advanced 
-                        technology. From emergency interventions to chronic disease management, we focus on personalized treatment, early detection, and long-term 
+                        Our Cardiology department offers expert care for a wide range of heart conditions, guided by experienced cardiologists and supported by advanced
+                        technology. From emergency interventions to chronic disease management, we focus on personalized treatment, early detection, and long-term
                         heart health. Patients receive comprehensive cardiac care through a team-based approach that ensures timely diagnosis and effective outcomes.
                     </p>
 
@@ -259,7 +265,7 @@ const Centreofexcellence = () => {
             </section>
 
             {/* Pulmonology-card */}
-            <section className="bg-white rounded-3xl  p-8 max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-start mt-8">
+            <section className="bg-white rounded-3xl p-8  mb-p mb-m max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-start mt-8">
                 <div className="w-full md:w-1/3">
                     <Image
                         src={Lungs}
@@ -270,11 +276,11 @@ const Centreofexcellence = () => {
                 </div>
 
                 {/* Content */}
-                <div className="w-full md:w-2/3 space-y-4">
+                <div className="w-full md:w-2/3 space-y-4 ">
                     <h3 className="text-[24px] mb-0 ">Pulmonology</h3>
                     <p className="mb-5">
-                        The Pulmonology department provides specialized care for all respiratory conditions, blending expert consultation with advanced imaging and 
-                        diagnostic tools. Our focus is on accurate identification of lung-related disorders, prompt medical management, and long-term respiratory health. 
+                        The Pulmonology department provides specialized care for all respiratory conditions, blending expert consultation with advanced imaging and
+                        diagnostic tools. Our focus is on accurate identification of lung-related disorders, prompt medical management, and long-term respiratory health.
                         Each treatment plan is tailored to help patients breathe easier, recover faster, and manage chronic lung issues with confidence and ongoing support.
                     </p>
 
@@ -291,7 +297,7 @@ const Centreofexcellence = () => {
             </section>
 
             {/*Neurology-card  */}
-            <section className="bg-white rounded-3xl  p-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-6 items-start ml-18 mt-8">
+            <section className="bg-white rounded-3xl  mb-p mb-m p-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-6 items-start ml-18 mt-8">
                 <div className="w-full md:w-1/3">
                     <Image
                         src={Brain}
@@ -305,8 +311,8 @@ const Centreofexcellence = () => {
                 <div className="w-full md:w-2/3 space-y-4">
                     <h2 className="text-[24px] mb-0">Neurology</h2>
                     <p className="mb-5">
-                        Our Neurology team delivers thorough evaluation and treatment for disorders affecting the brain, spinal cord, and nervous system. We combine 
-                        state-of-the-art imaging with clinical expertise to diagnose complex neurological issues early and manage them effectively. From emergency 
+                        Our Neurology team delivers thorough evaluation and treatment for disorders affecting the brain, spinal cord, and nervous system. We combine
+                        state-of-the-art imaging with clinical expertise to diagnose complex neurological issues early and manage them effectively. From emergency
                         neurological care to long-term rehabilitation, our patient-focused approach ensures the highest level of safety and support throughout.
                     </p>
 
@@ -323,7 +329,7 @@ const Centreofexcellence = () => {
             </section>
 
             {/*Mother And Child Care -card  */}
-            <section className="bg-white rounded-3xl  p-8 max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-start mt-8">
+            <section className="bg-white rounded-3xl  mb-p mb-m  p-8 max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-start mt-8">
                 <div className="w-full md:w-1/3">
                     <Image
                         src={Motherchild}
@@ -337,8 +343,8 @@ const Centreofexcellence = () => {
                 <div className="w-full md:w-2/3 space-y-4">
                     <h2 className="text-[24px] mb-0">Mother and Child Care </h2>
                     <p className="mb-5">
-                        Our Mother and Child Care unit ensures holistic health services for women and children, focusing on safety, comfort, and expert medical attention 
-                        at every stage. From pregnancy to delivery, and from newborn care to pediatric support, our multidisciplinary team works together to offer 
+                        Our Mother and Child Care unit ensures holistic health services for women and children, focusing on safety, comfort, and expert medical attention
+                        at every stage. From pregnancy to delivery, and from newborn care to pediatric support, our multidisciplinary team works together to offer
                         comprehensive, compassionate care for both mothers and their little ones.
                     </p>
 
@@ -355,7 +361,7 @@ const Centreofexcellence = () => {
             </section>
 
             {/*Cancer Center-card  */}
-            <section className="bg-white rounded-3xl  p-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-6 items-start ml-18 mt-8">
+            <section className="bg-white rounded-3xl   mb-p mb-m p-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-6 items-start ml-18 mt-8">
                 <div className="w-full md:w-1/3">
                     <Image
                         src={Cancercentre}
@@ -369,8 +375,8 @@ const Centreofexcellence = () => {
                 <div className="w-full md:w-2/3 space-y-4">
                     <h2 className="text-[24px] mb-0">Cancer Centre</h2>
                     <p className="mb-5">
-                        Our Cancer Care team offers compassionate and comprehensive treatment tailored to each patient’s diagnosis and stage of illness. 
-                        Combining advanced technology with multidisciplinary expertise, we focus on early detection, accurate diagnosis, and holistic care. 
+                        Our Cancer Care team offers compassionate and comprehensive treatment tailored to each patient’s diagnosis and stage of illness.
+                        Combining advanced technology with multidisciplinary expertise, we focus on early detection, accurate diagnosis, and holistic care.
                         We aim to provide not just treatment, but strength, support, and hope to every individual facing cancer.
                     </p>
 
@@ -387,7 +393,7 @@ const Centreofexcellence = () => {
             </section>
 
             {/*Sudha Fertility Centre -card  */}
-            <section className="bg-white rounded-3xl  p-8 max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-start mt-8 pb-16">
+            <section className="bg-white rounded-3xl  mb-p mb-m  p-8 max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-start mt-8 pb-16">
                 <div className="w-full md:w-1/3">
                     <Image
                         src={Mother}
@@ -401,8 +407,8 @@ const Centreofexcellence = () => {
                 <div className="w-full md:w-2/3 space-y-4">
                     <h2 className="text-[24px] mb-0">Fertility Care </h2>
                     <p className="mt-5">
-                        The Fertility Care division supports individuals and couples with personalized reproductive solutions grounded in empathy and 
-                        clinical excellence. With a focus on emotional wellbeing and transparent guidance, we help patients understand their fertility health and 
+                        The Fertility Care division supports individuals and couples with personalized reproductive solutions grounded in empathy and
+                        clinical excellence. With a focus on emotional wellbeing and transparent guidance, we help patients understand their fertility health and
                         choose the most effective path forward. Our goal is to make the journey to parenthood as smooth, safe, and successful as possible.
                     </p>
 

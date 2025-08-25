@@ -43,7 +43,7 @@ function Cardiology() {
   return (
     <div>
       {/* Banner Section */}
-      <section className="relative -mt-12 lg:-mt-24 px-4 md:px-10">
+      <section className="relative -mt-16 sm:-mt-20 md:-mt-24 lg:-mt-28 mx-2 sm:mx-2 md:mx-4 lg:mx-6 overflow-hidden">
         <div
           className="max-w-full mx-auto py-20 md:py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain banner min-h-[300px] sm:min-h-[400px]"
           style={{ backgroundImage: `url(${Banner.src})` }}
@@ -64,7 +64,7 @@ function Cardiology() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-2xl sm:text-3xl md:text-5xl font-bold mb-2"
+              className="text-[44px]  mb-3"
             >
               Cardiology
             </motion.h1>
@@ -74,7 +74,7 @@ function Cardiology() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-sm sm:text-base mb-4"
+              className="text-sm sm:text-base mb-4 text-white"
             >
               A Heartfelt Care For Your Heart Care
             </motion.p>
@@ -84,18 +84,18 @@ function Cardiology() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
+              className="flex justify-center sm:justify-start"
             >
               <Link
                 href="#"
-                className="btn-white inline-flex text-xs sm:text-sm items-center px-4 sm:px-6 py-2 sm:py-3 bg-white text-[#2b3990] font-semibold rounded-full hover:-translate-y-[3px] transition-transform duration-200"
-              >
+                className="btn-white inline-flex items-center whitespace-nowrap text-[14px] sm:text-[16px] tracking-wide px-4 sm:px-7 py-2 sm:py-3 bg-white text-[#2B3990] font-semibold rounded-full transition hover:-translate-y-[3px] transition-transform duration-200">
                 Book an Appointment <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
             </motion.div>
           </div>
 
           {/* Years of Expertise */}
-          <div className="absolute bottom-5 sm:bottom-8 hidden md:block right-4 sm:right-10 md:-right-[35px] z-30 text-[#2B3990] p-4 rounded-xl w-[180px] sm:w-[220px] mt-0 bg-white/90 shadow-lg">
+          <div className="absolute bottom-5 sm:bottom-4 hidden md:block right-4 sm:right-10 md:-right-[35px] z-30 text-[#2B3990] p-4 rounded-xl w-[180px] sm:w-[220px] mt-0 ">
             <h3 className="text-2xl sm:text-4xl font-bold tracking-wide">40+</h3>
             <p className="text-sm sm:text-lg leading-[1.6] tracking-wide text-black font-semibold">
               Years of Trusted <br />

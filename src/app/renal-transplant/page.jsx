@@ -1,4 +1,4 @@
-import Organtransplant from '@/pages/Organtransplant/Organtransplant'
+import Organtransplant from '@/pages/renaltransplant/renaltransplant'
 import React from 'react'
 
 function page() {
